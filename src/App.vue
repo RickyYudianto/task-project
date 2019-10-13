@@ -17,9 +17,6 @@ export default class App extends Vue {}
 </script>
 
 <style lang="scss">
-@import '~bootstrap/scss/bootstrap';
-@import '~bootstrap-vue/src/index.scss';
-
 .app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
