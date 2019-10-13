@@ -59,3 +59,6 @@ Folder for models only
 6) [Babel](https://babeljs.io/)
 7) [TsLint AirBnb Config](https://github.com/progre/tslint-config-airbnb)
 8) [Yarn](https://yarnpkg.com/lang/en/)
+
+## Live Demo
+[Task Project](https://ricky-task-project.netlify.com/)
