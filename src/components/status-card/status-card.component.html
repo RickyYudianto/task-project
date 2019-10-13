@@ -1,0 +1,8 @@
+<el-card class="card-wrapper round">
+    <div class="status">{{ taskStatus }}</div>
+    <draggable tag="div" :list="cardList" group="TASK">
+        <div v-for="card in cardList">
+            <CardComponent :card=card></CardComponent>
+        </div>
+    </draggable>
+</el-card>

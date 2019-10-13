@@ -1,0 +1,29 @@
+<div>
+    <el-row :gutter=10>
+        <el-card class="card-wrapper round">
+            <div class="status">
+                {{ constant.label.LIST_TASK }}
+                <el-button class="btn-add" type="text" @click.native="dialogVisible = true">+ {{ constant.label.ADD }}</el-button>
+            </div>
+            <draggable tag="el-col" :list="cardList" group="TASK">
+                <el-col :xs="24" v-for="card in cardList" :key="card.id"><CardComponent :card=card></CardComponent></el-col>
+            </draggable>
+        </el-card>
+    </el-row>
+        
+        
+    <el-dialog :title=constant.label.ADD_TASK :visible.sync="dialogVisible" width="30%" center>
+        <el-form :model="form" ref="form" label-position="left" label-width="100px" class="form">
+            <el-form-item :label=constant.label.TITLE class="label">
+                <el-input v-model="form.title" :placeholder=constant.placeholder.TYPE_TITLE></el-input>
+            </el-form-item>
+            <el-form-item :label=constant.label.DESCRIPTION class="label">
+                <el-input v-model="form.description" :placeholder=constant.placeholder.TYPE_DESCRIPTION></el-input>
+            </el-form-item>
+            <el-form-item class="dialog-footer">
+                <el-button @click="dialogVisible = false">Cancel</el-button>
+                <el-button class="btn-submit" type="primary" @click="onSubmit(form)">Create</el-button>
+            </el-form-item>
+        </el-form>
+    </el-dialog>
+</div>

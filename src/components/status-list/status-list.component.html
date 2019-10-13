@@ -1,0 +1,5 @@
+<el-row :gutter=10>
+    <el-col :xs="24" :sm="8"><StatusCardComponent :cardList=todoList :taskStatus=constant.label.TODO></StatusCardComponent></el-col>
+    <el-col :xs="24" :sm="8"><StatusCardComponent :cardList=inProgressList :taskStatus=constant.label.WIP></StatusCardComponent></el-col>
+    <el-col :xs="24" :sm="8"><StatusCardComponent :cardList=doneList :taskStatus=constant.label.DONE></StatusCardComponent></el-col>
+</el-row>

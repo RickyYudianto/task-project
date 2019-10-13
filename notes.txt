@@ -1,0 +1,35 @@
+Documentation
+-------------
+1. run command "yarn install"
+2. to run application "yarn serve"
+3. to run unit test "yarn test:unit"
+
+
+Notes
+------
+1. I use typescript for this project
+2. I use element-ui as your suggestion and vue-cli
+3. For draggable card, I use vuedraggable
+4. For test I use jest (built in from vuejs)
+5. For runner I use babel (first I thought use webpack, but I think it's too overkill in this mini project)
+6. For linting, I use tslint from AirBnb
+
+Project Structure
+-----------------
+1. I split into 4 files in every part of component
+   a. .component.html (it is to separate our html design from .vue file)
+   b. .component.scss (it is to separate our css from .vue file)
+   c. .component.spec.ts (for unit test)
+   d. .component.vue (for vue code)
+   - the reason I split that into 4 files, because it would be bloated in 1 file (.vue)
+2. I create folder constants, so every constants which I need will be there
+3. And also folder models
+4. To reduce business login inside component, it would be better if use action, reducer. But I think it would be overkill in this mini project. And business logic for this miniproject is not big enough
+
+
+Thank you.
+
+Best Regards,
+
+
+Ricky
